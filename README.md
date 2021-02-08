@@ -1,3 +1,4 @@
+
 # Order App
 ## Requirements
 1. Responsible for order manangement
@@ -8,6 +9,15 @@
 6. After X amount of seconds confirmed orders should automatically be moved to the delivered state.
 ### Before you start
 Create a .env file under the root directory. You may refer to .env.example for the variable used.
-### How to start
+
 Run `npm install` to install necessary library into the project. 
-Then run `npm start` to start the server.
+
+
+#### Run the following command to create database and migrate table
+
+`npx sequelize-cli db:create && npx sequelize-cli db:migrate`
+
+### How to start
+Run `npm start` to start the server.
+
+You may need to start the Payment App before calling the create order API.
