@@ -9,4 +9,5 @@
 ### Before you start
 Create a .env file under the root directory. You may refer to .env.example for the variable used.
 ### How to start
-Run `npm start` to start the server.
+Run `npm install` to install necessary library into the project. 
+Then run `npm start` to start the server.
